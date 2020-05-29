@@ -1,0 +1,222 @@
+/* モバイル向け */
+@media  (max-width: 670px) {
+    header {
+        height:45px;
+    }
+    
+    .logo{
+        display: None;
+    } 
+    　  
+
+    .header-right {
+        float:center;
+    }
+
+    .header-right a{
+        width:25%;
+        text-align: center;
+        line-height:45px;
+        font-size: 13px;
+        background-color:rgba(34, 49, 52, 0.9);
+        display: inline;
+        } 
+    
+    .top-wrapper{
+        padding:90px 0 50px 0;
+    }
+
+
+    .top-wrapper h1{
+        font-size:40px;
+        }
+
+
+    .top-wrapper h4{
+        font-size:20px;
+    }
+
+    .top-wrapper p{
+        font-size:15px;
+    }
+
+    .title{
+        font-size: 40px;
+    }
+
+    .portfolio{
+        width:100%;
+    }
+    
+    
+    .introduction-picture{
+        width:100%;
+        padding:0;
+    }
+
+
+    .introduction-text {
+        margin-left:45px;
+        padding:50px 100px 0  0;
+        width: 100%;
+        font-size:16px;
+    }
+
+
+    .sub-intro {
+        width:100%;
+    }
+
+    .sub-intro-title{
+        margin:0  auto;
+    }
+    
+    
+    .sub-intro-text {
+        font-size:16px;
+    }
+
+
+    .sub-intro-text-certification{
+        padding-left:180px;
+        padding-top:50px;
+        font-size:16px;
+    }
+
+    .sub-intro-text-vision{
+        padding-top:50px;
+        padding-left: 30px;
+        font-size:15px;
+    }
+    
+
+
+    .Contact-blank p{
+        padding-left:120px;
+        color:rgb(223, 223, 223);
+        text-align:left;
+    }
+
+}
+
+
+/* スマホ向け */
+@media (max-width: 415px) {
+    header {
+        height:30px;
+    }
+
+    
+    .header-right a{
+        line-height:30px;
+        font-size: 10px;
+        } 
+
+    
+    .top-wrapper h1{
+        font-size:25px;
+        }
+
+
+    .top-wrapper h4{
+        font-size:15px;
+    }
+
+    .top-wrapper p{
+        font-size:12px;
+    }
+
+    .heading {
+        padding-top:40px;
+        padding-bottom:25px;
+    }
+
+    .title{
+        font-size: 25px;
+    }
+    
+    .text-content {
+        font-size:12px;
+    } 
+
+    .introduction-text {
+        width: 100%;
+        font-size:12px;
+    }
+
+
+
+    .sub-intro {
+        padding-top: 30px;
+    }
+
+    .sub-intro-title{
+        padding: 1.8px;
+        margin-left: 67px;
+        font-size:15px;
+        width: 150px;
+        background: #F0F0F0;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15) inset;
+    }
+
+    
+    .sub-intro-text {
+        padding:25px;
+        font-size:11px;
+    }
+
+
+    .sub-intro-text-certification{
+        padding-left:60px;
+        padding-top:25px;
+        font-size:12px;
+    }
+
+    .sub-intro-text-vision{
+        padding-top:25px;
+        font-size:9px;
+    }
+    
+
+    .Contact-info{
+        font-size: 9px;
+        color:rgb(223, 223, 223);
+    } 
+
+    .Contact-blank p{
+        font-size: 12px;
+        padding-left:80px;
+        color:rgb(223, 223, 223);
+        text-align:left;
+    }
+
+    .formButton{
+        margin-top:40px;
+        width:20%;
+        height:25px;
+    }
+
+    
+    footer{
+        height: 60px;
+    }
+        
+    .footer-left li{
+        padding: 10px;
+    }
+
+    .footer-right{
+        font-size: 10px;
+    }
+
+    .fab{
+        font-size: 1em;
+    }
+
+
+
+
+
+}
+
+    
