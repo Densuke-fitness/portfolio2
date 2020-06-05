@@ -79,7 +79,7 @@
                     <div class = "portfolio-icon">
                         <img src="./pictures/CommingSoon.png">
                     </div>
-                    <p class = "text-content">6月中にデプロイです。</p>
+                    <p class = "text-content">7月中にデプロイします。</p>
                 </div>
                 <div class ="clear"></div>
             </div>
@@ -232,22 +232,22 @@
                 <p class ="Contact-info">なにかご用件がありましたら、以下のフォームよりお送りください。</p>
                 <p class ="Contact-info"><span class ="red">*</span>印がついている項目は、必ずご記入くださいますようお願いいたします。</p>
                 <div class= "Contact-blank">
-                    <p>名前<span class ="red">*</span></p>
+                    <label for="myname" >名前<span class ="red">*</span></label>
                     <!-- googleformと連携 -->
-                    <input type="text" name="entry.797738623" required>
+                    <input id="myname" type="text" name="entry.797738623" required>
                 </div>
                 <div class="clear"></div>
                 <div class="Contact-blank">
-                    <p>メールアドレス<span class ="red">*</span></p>
+                    <label for="mymail">メールアドレス<span class ="red">*</span></label>
                     <!-- googleformと連携  参考URL↓
                         https://qiita.com/curioussafuta/items/fa077cbf820faca30598 -->
-                    <input type="text" name="entry.347868338" required>
+                    <input id="mymail" type="email" name="entry.347868338" required>
                 </div>
                 <div class="clear"></div>
                 <div class="Contact-blank">
-                    <p>メッセージ<span class ="red">*</span></p>
+                    <label for = "messege">メッセージ<span class ="red">*</span></label>
                     <!-- googleformと連携 -->
-                    <textarea name="entry.1072261085" required></textarea>
+                    <textarea id = "messege" name="entry.1072261085" required></textarea>
                 </div>
                 <div class="clear"></div>
                 <button class = "formButton" type="submit" name="button" value="送信">Submit</button>
