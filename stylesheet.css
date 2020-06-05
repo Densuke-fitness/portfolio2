@@ -82,7 +82,8 @@ header {
 
 .Works-wrapper{
     text-align:center;
-    background-image:url("./pictures/Works-background-image.png");
+    background-image:url("./pictures/Works-background-image.jpg");
+    background-size:cover;
 }
 
 .heading {
@@ -143,7 +144,8 @@ header {
 
 .Profile-wrapper{
     text-align:center;
-    background-image:url("./pictures/Profile-background-image.png");
+    background-image:url("./pictures/Profile-background-image.jpg");
+    background-size:cover;
     padding: 50px;
 }
 
@@ -167,7 +169,11 @@ header {
     padding:0px 100px 30px 0;
     font-size:16px;
     font-weight: 600;
-    color:rgb(223, 223, 223);
+    color:rgba(0, 0, 0, 0.9);
+}
+
+.plus{
+    display: none;
 }
 
 
@@ -183,7 +189,8 @@ header {
     font-size:20px;
     width: 200px;
 	background: #F0F0F0;
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15) inset;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9) inset;
+    pointer-events: none;
 }
 
 .sub-intro-text {
@@ -191,7 +198,7 @@ header {
     text-align: left;
     font-size:16px;
     font-weight: 600;
-    color:rgb(223, 223, 223);
+    color:rgba(0, 0, 0, 0.9);
 }
 
 .sub-intro-text-certification{
@@ -200,7 +207,7 @@ header {
     text-align: left;
     font-size:16px;
     font-weight: 600;
-    color:rgb(223, 223, 223);
+    color:rgba(0, 0, 0, 0.9);
 }
 
 .sub-intro-text-vision{
@@ -208,12 +215,13 @@ header {
     text-align: left;
     font-size:15px;
     font-weight: 600;
-    color:rgb(223, 223, 223);
+    color:rgba(0, 0, 0, 0.9);
 }
 
 .Contact-Wrapper{
     text-align:center;
-    background-image:url("./pictures/Contact-background-image.png");
+    background-image:url("./pictures/Contact-background-image.jpg");
+    background-size:cover;
     padding-bottom:60px;
 }
 
@@ -222,7 +230,7 @@ header {
 }
 
 .Contact-info{
-    color:rgb(223, 223, 223);
+    color:black;
 } 
 
 .red{
@@ -234,7 +242,7 @@ header {
     display: block;
     margin-top:1em;
     padding-left:220px;
-    color:rgb(223, 223, 223);
+    color:black;
     text-align:left;
 }
 
