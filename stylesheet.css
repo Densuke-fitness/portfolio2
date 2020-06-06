@@ -119,12 +119,12 @@ header {
 }
 
 .portfolio-icon img{
-    width:70%;
+    width:50%;
     height:auto;
 }
 
 .text-content {
-    width:70%;
+    width:50%;
     display:inline-block;
     margin-top:10px;
     font-size:15px;
@@ -144,7 +144,7 @@ header {
 
 .Profile-wrapper{
     text-align:center;
-    background-image:url("./pictures/Profile-background-image.jpg");
+    background-image:url("./pictures/Profile-background-image.png");
     background-size:cover;
     padding: 50px;
 }
@@ -157,20 +157,30 @@ header {
 .introduction-picture{
     width:50%;
     float:left;
+}
+
+.introduction-picture img{
+    width:70%;
     height:auto;
-    padding:0 80px 0 20px;
+    margin: 0 15%;
 }
 
 
 .introduction-text {
-    width: 50%;
-    text-align: left;
     float:left;
-    padding:0px 100px 30px 0;
+    width: 50%;
+}
+
+.introduction-text P{
+    width: 60%;
+    margin: 0 20%;
+    text-align: left;
     font-size:16px;
     font-weight: 600;
     color:rgba(0, 0, 0, 0.9);
 }
+
+
 
 .plus{
     display: none;

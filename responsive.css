@@ -52,16 +52,30 @@
     .introduction-picture{
         width:100%;
         padding:0;
+        clear: left;
     }
+
+    .introduction-picture img{
+        width:80%;
+        margin: 0 10%;
+        padding:0;
+    }
+
 
 
     .introduction-text {
-        margin-left:45px;
-        padding:50px 100px 0  0;
+        margin-top: 25px;
+        margin-left: 10Px;
         width: 100%;
+        clear: left;
         font-size:16px;
     }
 
+
+    .introduction-text p{
+        width: 80%;
+        margin: 0 10%;
+    }
 
     .sub-intro {
         width:100%;
@@ -139,11 +153,10 @@
         font-size:12px;
     } 
 
-    .introduction-text {
-        width: 100%;
+
+    .introduction-text p{
         font-size:12px;
     }
-
 
 
     .sub-intro {
