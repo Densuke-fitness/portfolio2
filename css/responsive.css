@@ -157,6 +157,10 @@
     .portfolio-icon .portfolio-info p{
         font-size:12px;
     }
+    .portfolio-icon img{
+        margin-top: 20px;
+    }
+    
     
     
     .text-content {
