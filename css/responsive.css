@@ -126,6 +126,11 @@
         font-size: 10px;
         } 
 
+    .top-wrapper{
+        padding:70px 0 15px 0;
+    }
+    
+
     
     .top-wrapper h1{
         font-size:25px;
@@ -148,6 +153,11 @@
     .title{
         font-size: 25px;
     }
+
+    .portfolio-icon .portfolio-info p{
+        font-size:12px;
+    }
+    
     
     .text-content {
         font-size:12px;

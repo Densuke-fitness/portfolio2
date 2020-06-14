@@ -1,0 +1,53 @@
+/* スマホ向け */
+@media (max-width: 450px) {
+    
+    .top-wrapper{
+        padding:50px 0 30px 0;
+        }
+
+    .top-wrapper h1{
+        font-size:25px;
+        }
+
+    .top-wrapper h4{
+        font-size:15px;
+    }
+
+    .slide-wrapper {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        color: #5e6f84;
+        padding: 30px 0;
+        background-color: whitesmoke;
+        }
+
+    .slide-title {
+        font-size: 20px;
+    }
+
+    .change-btn-wrapper {
+        font-size: 15px;
+    }
+
+    .index-btn-wrapper {
+        font-size: 12px;
+    }
+
+
+    .info-articles p{
+        font-size:12px;
+    }
+
+
+    article li {
+        list-style: none;
+        width:100%;
+    }
+
+    article a {
+        font-size: 8px;
+    }
+
+
+}

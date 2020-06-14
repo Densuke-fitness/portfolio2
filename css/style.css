@@ -48,7 +48,7 @@ header {
 
 .top-wrapper{
     padding:180px 0 100px 0;
-    background-image:url(./pictures/title_picture.png);
+    background-color: whitesmoke;
     background-size:cover;
     color:rgba(48, 46, 46, 0.747);
     text-align:center;
@@ -82,7 +82,7 @@ header {
 
 .Works-wrapper{
     text-align:center;
-    background-image:url("./pictures/Works-background-image.jpg");
+    background-color:rgba(163, 207, 248, 0.5);
     background-size:cover;
 }
 
@@ -118,9 +118,31 @@ header {
     clear: left;
 }
 
+.portfolio-icon {
+    position: relative;
+}
+
+.portfolio-icon .portfolio-info{
+    position: absolute;
+    margin:0 25%;
+    width:50%;
+    background-color: rgba(0,0,0,.5);
+}
+
+.portfolio-icon .portfolio-info p{
+    text-align: center;
+    color: white;
+    font-size:15px;
+    font-weight: bold;
+}
+
+
+
 .portfolio-icon img{
+    margin-top:40px;
     width:50%;
     height:auto;
+    box-shadow: 1px 1px 4px rgba(0,0,0,.5);
 }
 
 .text-content {
@@ -144,7 +166,7 @@ header {
 
 .Profile-wrapper{
     text-align:center;
-    background-image:url("./pictures/Profile-background-image.png");
+    background-color:whitesmoke;
     background-size:cover;
     padding: 50px;
 }
@@ -163,6 +185,7 @@ header {
     width:70%;
     height:auto;
     margin: 0 15%;
+    box-shadow: 1px 1px 4px rgba(0,0,0,.5);
 }
 
 
@@ -230,7 +253,7 @@ header {
 
 .Contact-Wrapper{
     text-align:center;
-    background-image:url("./pictures/Contact-background-image.jpg");
+    background-image:url("../img/Contact-background-image.jpg");
     background-size:cover;
     padding-bottom:60px;
 }
@@ -282,7 +305,7 @@ header {
 
 footer{
     height: 100px;
-    background-image:url("./pictures/footer-backgroud-image.png");
+    background-color:rgba(34, 49, 52, 0.9);
 }
 
 .footer-left{

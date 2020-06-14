@@ -1,0 +1,158 @@
+<!-- html:5 でテンプレートを展開 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Densuke_Portfolio_Site</title>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/style2.css">
+    <link rel="stylesheet" href="CSS/responsive2.css">
+</head>
+<body>
+    <div class = "container header-color">
+        <header>
+            <div class="row">
+                <div class = "col-sm-6">
+                    <h1>Articles</h1>
+                </div>
+                <div class = "col-sm-6 align-right">
+                    <a href="./Practice_Fintech.html">HOMEへ戻る</a>
+                </div>   
+            </div>
+        </header>
+    </div>
+
+    <div class = "container">
+        <div class = "top-wrapper">
+            <h1>多くを学ぶより創造するほうが優る。<br>創造は人生の根底なり。</h1>
+            <h4>ジャン・アンリ・ファーブル</h4>
+        </div>
+
+        <div class="slide-wrapper">
+            <h2 class="slide-title">原稿を書いたシリーズ</h2>
+            <div class="change-btn-wrapper">
+                <div class="change-btn prev-btn">← 前へ</div>
+                <div class="change-btn next-btn">次へ →</div>
+            </div>
+            <ul class="slides">
+                <li class="slide active"><a href="https://wineytrade.com/python_zaimubunseki_01/"  target="_blank"><img src="./img/python_zaim_01.jpg"></a></li>
+                <li class="slide"><a href="https://wineytrade.com/python_zaimubunseki_07/"  target="_blank"><img src="./img/python_zaim_07.jpg"></a></li>
+            </ul>
+            <div class="index-btn-wrapper">
+                <div class="index-btn">1</div>
+                <div class="index-btn">2</div>
+            </div>
+            </div>
+        
+        <div class = "info-wrapper">
+            <div class="info-articles">
+                <p>
+                    Densukeが作成した記事をまとめたページです。
+                    <br>
+                    ファイナンスや機械学習の内容をライティングしています。
+                </p>
+            </div>
+            <article>
+                <h2>Densukeの記事まとめ</h2>
+                <ul id = "article_unit" class  = "clearfix">
+                </ul>
+            </article>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class = "container footer-color">
+        <footer>
+            <div class="row">
+                <div class = "col-sm-6 ">
+                    <a href="./Practice_Fintech.html">HOMEへ戻る</a>
+                </div> 
+                <div class = "col-sm-6 align-right" >
+                    <p>&copy;Practice_Fintech.work 2020</p>
+                </div>  
+            </div>
+        </footer>
+    </div> 
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script>
+    function toggleChangeBtn() {
+        var slideIndex = $('.slide').index($('.active'));
+        $('.change-btn').show();
+        if (slideIndex == 0) {
+        $('.prev-btn').hide();
+        } else if (slideIndex == $(".slide").length -1 ) {
+        $('.next-btn').hide();
+        }
+    }
+    
+    $('.index-btn').click(function() {
+        $('.active').removeClass('active');
+        var clickedIndex = $('.index-btn').index($(this));
+        $('.slide').eq(clickedIndex).addClass('active');
+        toggleChangeBtn();
+    });
+    
+    $('.change-btn').click(function() {
+        var $displaySlide = $('.active');
+        $displaySlide.removeClass('active');
+        if ($(this).hasClass('next-btn')) {
+        $displaySlide.next().addClass('active');
+        } else {
+        $displaySlide.prev().addClass('active');
+        }
+        toggleChangeBtn();
+    });
+
+    data = [
+            {
+            "path":"https://wineytrade.com/python_zaimubunseki_01/", 
+            "name":"Pythonによる財務分析①　バフェットコードをつかって完全レクチャー！ (全8回)",
+            },
+            {
+                "path":"https://wineytrade.com/python_zaimubunseki_02/", 
+                "name":"Pythonによる財務分析②　バフェットコードをつかって完全レクチャー！ (全8回)",
+            },
+            {
+                "path":"https://wineytrade.com/python_zaimubunseki_03/", 
+                "name":"Pythonによる財務分析③　バフェットコードをつかって完全レクチャー！ (全8回)",
+            },
+            {
+                "path":"https://wineytrade.com/python_zaimubunseki_04/", 
+                "name":"Pythonによる財務分析④　バフェットコードをつかって完全レクチャー！ (全8回)",
+            },
+            {
+                "path":"https://wineytrade.com/python_zaimubunseki_05/", 
+                "name":"Pythonによる財務分析⑤　バフェットコードをつかって完全レクチャー！ (全8回)",
+            },
+            {
+                "path":"https://wineytrade.com/python_zaimubunseki_06/", 
+                "name":"Pythonによる財務分析⑥　バフェットコードをつかって完全レクチャー！ (全8回)",
+            },
+            {
+                "path":"https://wineytrade.com/python_zaimubunseki_07/", 
+                "name":"Pythonによる財務分析⑦　バフェットコードをつかって完全レクチャー！ (全8回)",
+            }
+    ]
+
+            for (var i = 0;i < data.length; i++){
+                // document.createElement
+                $('<li class="article"></li>')
+                    .append('<a href =" '+ data[i].path +'"  target="_blank" >'+data[i].name+'</a>')
+                    .appendTo('#article_unit');
+            }
+    
+    </script>
+</body>
+</html>

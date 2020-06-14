@@ -12,20 +12,19 @@
     <title>Densuke_Portfolio_Site</title>
     <link rel="apple-touch-icon" size="152x152" href="./pictures/myself_picture.png">
     <link rel="shortcut icon" href="./pictures/myself_picture.png" >
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body>
     <header>
         <div class = "container">
             <div class ="header-left">
-                <img class = "logo" src="./pictures/header-logo.png">
+                <img class = "logo" src="./img/header-logo.png">
             </div>
 
             <div class="header-right">
-                <a  href="https://wineytrade.com/">Articles</a>
+                <a  href="./Articles.html">Articles</a>
                 <a  href="#Contact">Contact</a>
                 <a  href="#Profile">Profile</a>
                 <a  href="#Works">Works</a>
@@ -54,30 +53,42 @@
 
                 <div class = "portfolio">
                     <div class = "portfolio-icon">
-                        <a href="https://github.com/Densuke-fitness/FPA-portfolio1"><img src="./pictures/portfolio1.png"></a>  
+                        <div class = portfolio-info>
+                            <p>株式投資のリターン予測ツール</p>
+                        </div>
+                        <a href="https://github.com/Densuke-fitness/FPA-portfolio1" target="_blank"><img src="./img/portfolio1.png"></a>  
                     </div>
-                    <p class = "text-content">これは私が初めて創作した作品である、<span class="portfolio-name">株式投資のリターン予測ツール</span>です。財務データをもとに重回帰分析を行い、キャピタルゲインなどを予測します。</p>
+                    <p class = "text-content">財務データをもとに重回帰分析を行い、キャピタルゲインなどを予測します。</p>
                 </div>
 
                 <div class = "portfolio">
                     <div class = "portfolio-icon">
-                        <img src="./pictures/portfolio2.png">
+                        <div class = portfolio-info>
+                            <p>プロフィールサイト</p>
+                        </div>
+                        <img src="./img/portfolio2.png">
                     </div>
-                    <p class = "text-content">Densukeの<span class="portfolio-name">プロフィールサイト</span>です。フロントの勉強の一環で作成しました。Fintechに関するモノを多数公開しています。</p>
+                    <p class = "text-content">Fintechに関するモノを多数公開しています。</p>
                 </div>
 
                 <div class ="clear"></div>
 
                 <div class = "portfolio">
                     <div class = "portfolio-icon">
-                        <img src="./pictures/CommingSoon.png">
+                        <div class = portfolio-info>
+                            <p>CommingSoon</p>
+                        </div>
+                        <img src="./img/CommingSoon.png">
                     </div>
                     <p class = "text-content">6月中にデプロイします。</p>
                 </div>
 
                 <div class = "portfolio">
                     <div class = "portfolio-icon">
-                        <img src="./pictures/CommingSoon.png">
+                        <div class = portfolio-info>
+                            <p>CommingSoon</p>
+                        </div>
+                        <img src="./img/CommingSoon.png">
                     </div>
                     <p class = "text-content">7月中にデプロイします。</p>
                 </div>
@@ -92,7 +103,7 @@
             </div>
             <div class ="introduction">
                 <div class = "introduction-picture">
-                    <img  src= "./pictures/myself_picture.png">
+                    <img  src= "./img/myself_picture.png">
                 </div>
                 <div class ="introduction-text">
                     <p>
@@ -110,7 +121,7 @@
                         <br>
                         【PGスキル】
                         <br>
-                        &nbsp;Python,&nbsp;Golang,&nbsp;JavaScript
+                        &nbsp;Python,&nbsp;PHP,&nbsp;HTML&CSS,&nbsp;JavaScript
                         <br>
                         【特技】
                         <br>
@@ -118,7 +129,7 @@
                         <br>
                         【愛読書】
                         <br>
-                        &nbsp;書く技術・伝える技術
+                        &nbsp;書く技術・伝える技術(倉島保美 著)
                         <br>
                         【好きな人】
                         <br>
@@ -272,9 +283,41 @@
                 </ul>
             </div>
             <div class="footer-right">
-                <p>Practice_Fintech.work</p>
+                <p>&copy;Practice_Fintech.work 2020</p>
             </div>
         </div>
     </footer>
-    <script type="text/javascript" src="script.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        // sub-introのアコーディオン
+        $("header a").click(function(){
+            var id = $(this).attr("href");
+            var position = $(id).offset().top;
+            
+            $("html, body").animate({
+                "scrollTop":position
+            },500)
+        });
+
+        $('.sub-intro').click(function(){
+            var $subIntroText = $(this).find('.sub-intro-text');
+            if($subIntroText.hasClass('open')){
+                $subIntroText.removeClass('open');
+                $subIntroText.slideUp();
+                $(this).find('span').text('+');
+            }else{
+                $subIntroText.addClass('open');
+                $subIntroText.slideDown();
+                $(this).find('span').text('-');
+                
+            }
+        });
+        // ここまで
+
+
+
+
+
+    </script>
 </body>
