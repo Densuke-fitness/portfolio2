@@ -82,7 +82,7 @@ header {
 
 .Works-wrapper{
     text-align:center;
-    background-color:rgba(163, 207, 248, 0.5);
+    background-color: #e6e4dd;
     background-size:cover;
 }
 
@@ -253,7 +253,7 @@ header {
 
 .Contact-Wrapper{
     text-align:center;
-    background-image:url("../img/Contact-background-image.jpg");
+    background-image:url("../img/Contact-background-img.png");
     background-size:cover;
     padding-bottom:60px;
 }

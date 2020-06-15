@@ -117,8 +117,8 @@ header {
 
 .index-btn {
     display: inline-block;
-    color: #4e90af;
-    background-color: #e0f5ff;
+    color:whitesmoke;
+    background-color:  #d5c383;
     width: 40px;
     padding: 6px 0;
     margin: 0 5px;
@@ -128,7 +128,7 @@ header {
 
 .index-btn:hover {
     color: #fff;
-    background-color: #5cabd0;
+    background-color:#ddbe57;
 }
 
 
